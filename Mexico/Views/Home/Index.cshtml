@@ -1,0 +1,40 @@
+﻿@model List<Mexico.Models.Estados>
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Estados de México</title>
+    <link href="~/estilos1.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <h2>Estados de</h2>
+        <h1>MÉXICO</h1>
+        <div></div>
+    </header>
+
+    <main>
+
+        <ul>
+           @foreach(var estado in Model)
+           { 
+            <li>
+                <img src="~/img/estados/@(estado.Nombre.Replace(" ","")).png" />
+                @estado.Nombre
+            </li>
+           }
+
+        </ul>
+
+    </main>
+
+    <footer>
+        Programación Web<br />
+        Unidad 2. MVC
+    </footer>
+
+</body>
+</html>

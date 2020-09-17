@@ -1,0 +1,75 @@
+﻿
+html, body {
+    margin: 0;
+    background-color: whitesmoke;
+    padding: 0;
+}
+
+
+header {
+    background-image: url(img/header.png);
+    background-size: cover, contain;
+    background-position: bottom;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+    header h1, header h2 {
+        color: white;
+        margin: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    header h1 {
+        font-size: 6em;
+    }
+
+    header div {
+        background: linear-gradient( to left, darkgreen 0, darkgreen 33.3%, white 33.3%, white 66.6%, red 66.6%, red )no-repeat;
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+    }
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    ul li {
+        text-align: center;
+        font-family: 'Segoe UI';
+        font-weight: lighter;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        margin: 50px;
+    }
+
+        ul li img {
+            display: block;
+            height: 150px;
+            filter: opacity(90%);
+            margin-bottom: 10px;
+        }
+
+        ul li:hover {
+            font-weight: normal;
+        }
+
+            ul li:hover img {
+                filter: opacity(100%);
+            }
+
+            footer{
+                margin-top:30px;
+                text-align:center;
+                font-family:Tahoma;
+                color:darkgray;
+            }
